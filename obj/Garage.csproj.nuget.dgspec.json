@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crate\\workspace\\Garage\\Garage.csproj": {}
+    "C:\\Users\\crate\\workspace\\garage\\Garage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crate\\workspace\\Garage\\Garage.csproj": {
+    "C:\\Users\\crate\\workspace\\garage\\Garage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crate\\workspace\\Garage\\Garage.csproj",
+        "projectUniqueName": "C:\\Users\\crate\\workspace\\garage\\Garage.csproj",
         "projectName": "Garage",
-        "projectPath": "C:\\Users\\crate\\workspace\\Garage\\Garage.csproj",
+        "projectPath": "C:\\Users\\crate\\workspace\\garage\\Garage.csproj",
         "packagesPath": "C:\\Users\\crate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crate\\workspace\\Garage\\obj\\",
+        "outputPath": "C:\\Users\\crate\\workspace\\garage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\crate\\AppData\\Roaming\\NuGet\\NuGet.Config",

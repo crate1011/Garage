@@ -3,13 +3,18 @@ using System;
 
 namespace Garage
 {
-    public class Ram : Vehicle  // Gas powered truck
+    public class Ram : Vehicle, IGasVehicle  // Gas powered truck
     {
-        public double FuelCapacity { get; set; }
+        public double FuelCapacity { get; set; } = 75;
 
         public void RefuelTank()
         {
-            // method definition omitted
+            FuelCapacity = 100;
+        }
+
+        public void CurrentTankPercentage()
+        {
+            Console.WriteLine($"You have %{FuelCapacity} of a tank");
         }
         public override void Drive()
         {

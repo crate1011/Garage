@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TJqycX3AesTPG0k3S/d7PabMBQnUhnQRCOunGtsi1R0NjRNhcSwCzywURVIyJo0duR38UgFu2kFJDngUGbH2cQ==",
+  "dgSpecHash": "GiyBC4JQSyNUuLBMbbbN9lVLg+pK24TKXxYD3k6a+mtj5AgNQHfcqmJnCj+76tamQ3fGvkbrOXnq2OYT/srZGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crate\\workspace\\Garage\\Garage.csproj",
+  "projectFilePath": "C:\\Users\\crate\\workspace\\garage\\Garage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crate\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],

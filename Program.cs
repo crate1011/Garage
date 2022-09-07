@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Garage
 {
@@ -7,30 +8,55 @@ namespace Garage
         static void Main(string[] args)
         {
             Zero fxs = new Zero();
+            Zero fx = new Zero();
             Tesla modelS = new Tesla();
-            Cessna mx410 = new Cessna();
-            Ram doge = new Ram();
 
-            fxs.MainColor = "red";
-            modelS.MainColor = "blue";
-            mx410.MainColor = "white";
-            doge.MainColor = "black";
+            List<IElectricVehicle> electricVehicles = new List<IElectricVehicle>() {
+                fx, fxs, modelS
+            };
 
-            fxs.Drive();
-            fxs.Turn();
-            fxs.Stop();
+            Console.WriteLine("Electric Vehicles");
+            foreach (IElectricVehicle ev in electricVehicles)
+            {
+                ev.CurrentChargePercentage();
+            }
 
-            modelS.Drive();
-            modelS.Turn();
-            modelS.Stop();
+            foreach (IElectricVehicle ev in electricVehicles)
+            {
+                // This should charge the vehicle to 100%
+                ev.ChargeBattery();
+            }
 
-            mx410.Drive();
-            mx410.Stop();
-            mx410.Turn();
+            foreach (IElectricVehicle ev in electricVehicles)
+            {
+                ev.CurrentChargePercentage();
+            }
 
-            doge.Drive();
-            doge.Turn();
-            doge.Stop();
+            /***********************************************/
+
+            Ram ram = new Ram();
+            Cessna cessna150 = new Cessna();
+
+            List<IGasVehicle> gasVehicles = new List<IGasVehicle>() {
+                ram, cessna150
+            };
+
+            Console.WriteLine("Gas Vehicles");
+            foreach (IGasVehicle gv in gasVehicles)
+            {
+                gv.CurrentTankPercentage();
+            }
+
+            foreach (IGasVehicle gv in gasVehicles)
+            {
+                // This should completely refuel the gas tank
+                gv.RefuelTank();
+            }
+
+            foreach (IGasVehicle gv in gasVehicles)
+            {
+                gv.CurrentTankPercentage();
+            }
         }
     }
 }
